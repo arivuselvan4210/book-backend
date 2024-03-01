@@ -5,10 +5,7 @@ const books = require("./router/bookRouter");
 const cors = require("cors");
 
 app.use(express.json());
-app.use(cors({
-   origin: 'https://blog-forntend.vercel.app',
-   optionsSuccessStatus: 200,
-}));
+app.use(cors());
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', 'https://book-forntend-rho.vercel.app');
   res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
