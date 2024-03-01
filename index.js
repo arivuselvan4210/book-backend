@@ -12,7 +12,7 @@ app.use(cors({
 app.use("/", books);
 mongoss
   .connect(
-    "mongodb+srv://book:book0101@cluster0.sznltjj.mongodb.net/?retryWrites=true&w=majority"
+     "mongodb+srv://arivuselvan4210:Arivu0707@cluster0.qvdusye.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
   )
   .then(() => {
     console.log("connected");
