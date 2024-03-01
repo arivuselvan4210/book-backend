@@ -5,7 +5,10 @@ const books = require("./router/bookRouter");
 const cors = require("cors");
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+   origin: 'https://blog-forntend.vercel.app',
+   optionsSuccessStatus: 200,
+}));
 app.use("/", books);
 mongoss
   .connect(
